@@ -1,0 +1,24 @@
+.main-nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5rem;
+}
+
+.push {
+  margin-right: auto;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+
+}
+
+a:hover {
+  background-color: aliceblue;
+}

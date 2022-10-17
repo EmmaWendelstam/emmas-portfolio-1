@@ -1,13 +1,7 @@
-.main-nav {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  padding-right: 5rem;
-}
-
-.push {
-  margin-right: auto;
+* {
+  font-family: "Open Sans Hebrew Condensed";
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -16,9 +10,59 @@ a {
   text-decoration: none;
   list-style-type: none;
   color: black;
+  font-size: 1.3em;
+}
 
+h2 {
+  height: 165px;
+  font-size: 50px;
+  line-height: 68px;
+}
+
+p {
+  font-size: 40px;
+  line-height: 48px;
 }
 
 a:hover {
   background-color: aliceblue;
+}
+
+/* NAVBAR */
+
+.main-nav {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5rem;
+  background-color: aqua;
+}
+
+.push {
+  margin-right: auto;
+}
+
+/* -------------------------------- */
+
+/* Introduction */
+.introduction-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.introduction-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.introduction,
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 770px;
 }

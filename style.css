@@ -22,13 +22,13 @@ body {
   flex-direction: column;
   align-items: center;
   width: 80vw;
-  background-color: rgb(255, 255, 255);
+  background-color: #f9f9f9;
 }
 
 header {
   width: 68vw;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: #f9f9f9;
 }
 
 main {
@@ -195,4 +195,40 @@ a:hover {
 
 .project-1 section {
   padding-left: 38.5rem;
+}
+
+.project-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  height: 100vh;
+  width: 68vw;
+  padding-top: 10rem;
+}
+
+.project-2 img {
+  height: 542px;
+  width: 611px;
+}
+
+.project-2 section {
+  padding-left: -38.5rem;
+}
+
+.project-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100vh;
+  width: 68vw;
+  padding-top: 10rem;
+}
+
+.project-3 img {
+  height: 360px;
+  width: 620px;
+  padding-top: 9rem;
+}
+
+.project-3 section {
 }

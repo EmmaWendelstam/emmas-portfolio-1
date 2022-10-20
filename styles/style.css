@@ -12,9 +12,9 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0);
   width: 100vw;
   height: 100%;
+  background-color: #f9f9f9;
 }
 
 .flexbox {
@@ -22,17 +22,15 @@ body {
   flex-direction: column;
   align-items: center;
   width: 80vw;
-  background-color: #f9f9f9;
 }
 
 header {
-  width: 68vw;
+  width: 80vw;
   height: 100vh;
-  background-color: #f9f9f9;
 }
 
 main {
-  width: 68vw;
+  width: 80vw;
 }
 
 ul,
@@ -116,6 +114,13 @@ a:hover {
   align-items: center;
 }
 
+.profile_pic {
+  padding-right: 5rem;
+}
+.introduction-items > article {
+  width: 46rem;
+}
+
 .introduction-items > article > h2 {
   height: 165px;
   font-size: 50px;
@@ -146,6 +151,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.project-scroll {
+  scroll-snap-align: start;
 }
 
 .main h2 {
@@ -179,40 +190,32 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  position: relative;
   height: 100vh;
-  width: 68vw;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .project-1 img {
-  position: absolute;
-  right: 27.5rem;
-  top: 11rem;
-  height: 625px;
-  width: 789px;
+  height: 959px;
+  width: 836px;
+  margin: -3rem;
 }
 
 .project-1 section {
-  padding-left: 38.5rem;
+  padding-right: 2rem;
 }
 
 .project-2 {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
+  justify-content: center;
   height: 100vh;
-  width: 68vw;
   padding-top: 10rem;
 }
 
 .project-2 img {
-  height: 542px;
-  width: 611px;
-}
-
-.project-2 section {
-  padding-left: -38.5rem;
+  width: 894px;
+  height: 676px;
 }
 
 .project-3 {
@@ -220,35 +223,66 @@ a:hover {
   flex-direction: row;
   align-items: flex-start;
   height: 100vh;
-  width: 68vw;
   padding-top: 10rem;
 }
 
 .project-3 img {
-  height: 360px;
-  width: 620px;
+  height: 715px;
+  width: 993px;
+  margin: -9rem;
+  padding-left: 2rem;
+  padding-top: 6rem;
+}
+
+.project-4 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 10rem;
+}
+
+.project-4 img {
+  width: 725px;
+  height: 415.43px;
   padding-top: 9rem;
 }
 
-.project-3 section {
+.project-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 10rem;
 }
 
-button {
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0px;
+.project-5 img {
+  width: 753px;
+  height: 436px;
+  padding-top: 9rem;
+}
+
+.project-1 a,
+.project-2 a,
+.project-3 a,
+.project-4 a,
+.project-5 a {
+  font-size: medium;
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+}
+.center-style-btn {
+  display: flex;
+  justify-content: center;
   border-radius: 15px;
   border: 1px solid black;
-  box-shadow: 5px 10px #888888;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  color: black;
-}
-
-button:hover {
-  color: blue;
+  width: 231px;
+  height: 59px;
+  border: 1px solid #727e80;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  align-items: center;
 }

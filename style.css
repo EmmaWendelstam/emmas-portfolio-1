@@ -234,17 +234,21 @@ a:hover {
 }
 
 button {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0px;
-  border-radius: 32px;
-  background-color: #727e80;
-  border: none;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 5px 10px #888888;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
+  color: black;
+}
+
+button:hover {
+  color: blue;
 }

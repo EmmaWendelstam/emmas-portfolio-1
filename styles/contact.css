@@ -26,7 +26,7 @@ body {
 
 header {
   width: 80vw;
-  height: 100vh;
+  height: 10vh;
 }
 
 ul,
@@ -74,72 +74,73 @@ a:hover {
 
 /* -------------------------------- */
 
-/* INTRODUCTION */
-
-.introduction-flex {
-  padding-top: 8rem;
-}
-
-.introduction-items {
+.main {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 10rem;
+  height: 31rem;
+  width: 80vw;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: relative;
+  width: 80vw;
+  gap: 6rem;
+  text-align: center;
 }
 
-.profile_pic {
-  position: absolute;
-  width: 704.84px;
-  height: 600.75px;
-  left: 44rem;
-  top: 7rem;
-}
-.introduction-items > article {
-  width: 44.5rem;
-}
-
-.introduction-items > article > h2 {
-  height: 165px;
-  font-size: 50px;
-  line-height: 68px;
-}
-
-.introduction-items > article > p {
+.contact-container p {
   letter-spacing: 0px;
   font-size: 34px;
+  width: 48rem;
 }
 
-.wave {
-  font-size: 4rem;
-}
-
-/* ================================================================= */
-
-/* BUTTON STYLING */
-
-.center-style-btn:hover {
-  cursor: pointer;
-  background-color: rgba(240, 240, 232, 0.869);
-}
-
-.center-btn {
+.contact-info {
   display: flex;
-  justify-content: flex-end;
-  padding: 1rem 12rem 0 0;
-}
-.center-style-btn {
-  display: flex;
-  justify-content: center;
-  border-radius: 15px;
-  border: 1px solid black;
-  width: 231px;
-  height: 59px;
-  border: 1px solid #727e80;
-  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
   align-items: center;
-  z-index: 0;
+  gap: 9rem;
+  justify-content: center;
+  width: 50rem;
+  padding-left: 6rem;
 }
 
-/* -------------------------------- */
+.contact-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-mail img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-linkedIn img {
+  margin: 1.9rem;
+}
+
+figure {
+  text-align: center;
+}
+figcaption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 20vh;
+  padding-top: 2rem;
+}

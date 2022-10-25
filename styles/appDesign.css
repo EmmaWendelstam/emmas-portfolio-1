@@ -27,7 +27,11 @@ body {
 
 header {
   width: 80vw;
-  background-color: #727e80;
+  height: 100vh;
+}
+
+main {
+  width: 80vw;
 }
 
 ul,
@@ -55,40 +59,8 @@ p {
   line-height: 48px;
 }
 
-.underline-medium {
-  display: inline-block;
-  line-height: 0em;
-  padding-bottom: 0.5em;
-  background: linear-gradient(
-    90.33deg,
-    #b5c5c5 43.34%,
-    rgba(181, 197, 197, 0) 121.48%
-  );
-}
-
-.underline-small {
-  display: inline-block;
-  line-height: 0em;
-  padding-bottom: 0.5em;
-  background: linear-gradient(
-    90.33deg,
-    #b5c5c5 43.34%,
-    rgba(181, 197, 197, 0) 121.48%
-  );
-  font-weight: 300;
-}
-
 a:hover {
   color: rgba(149, 164, 176, 0.854);
-}
-
-.main-nav {
-  padding: 3rem 0 0 0;
-}
-
-.push {
-  margin-right: auto;
-  padding-top: 5px;
 }
 
 /* NAVBAR */
@@ -110,34 +82,56 @@ a:hover {
 /* INTRODUCTION */
 
 .introduction-flex {
-  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
 }
 
 .introduction-items {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
+  width: 65rem;
 }
 
-.profile_pic {
-  width: 242px;
-  height: 242px;
-}
-.introduction-items > article {
-  width: 46rem;
+.profile-pic {
+  height: 750px;
+  padding-top: 5rem;
 }
 
-.introduction-items > article > h2 {
-  height: 165px;
-  font-size: 50px;
+.introduction-items li {
+  list-style-type: disc;
+  font-size: 1.3rem;
+  letter-spacing: 0px;
+}
+
+.introduction-flex-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.introduction-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.introduction-articles h2 {
+  font-size: 2.2rem;
   line-height: 68px;
 }
 
-.introduction-items > article > p {
+.introduction-articles p {
+  font-size: 1.3rem;
   letter-spacing: 0px;
-  font-size: 34px;
+  line-height: initial;
+}
+
+.tools-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
 
 /* ================================================================= */
@@ -146,10 +140,10 @@ a:hover {
 
 .main {
   display: flex;
-  height: 100vh;
-  width: 80vw;
-  padding-top: 3rem;
-  background-color: #279aae;
+  flex-direction: column;
+  align-items: center;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .main h2 {
@@ -181,18 +175,6 @@ a:hover {
 
 /* BUTTON STYLING */
 
-.project-1 a,
-.project-2 a,
-.project-3 a,
-.project-4 a,
-.project-5 a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 35px;
-  color: #000000;
-}
-
 .center-style-btn:hover {
   cursor: pointer;
   background-color: rgba(240, 240, 232, 0.869);
@@ -223,4 +205,12 @@ a:hover {
   align-items: center;
   gap: 2rem;
   height: 20vh;
+}
+
+/* MEDIA QUERYES  */
+
+@media (max-width: 800px) {
+  .flexbox {
+    background-color: #727e80;
+  }
 }

@@ -1,0 +1,22 @@
+{
+  "name": "emma",
+  "version": "1.0.0",
+  "description": "#HELLO",
+  "main": "script.js",
+  "scripts": {
+    "compile": "sass --no-source-map --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnHansson90/emmas-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnHansson90/emmas-portfolio/issues"
+  },
+  "homepage": "https://github.com/JohnHansson90/emmas-portfolio#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

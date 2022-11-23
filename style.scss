@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+// VARIABLES
+$bg-color-white: #ffffff;
+$text-color-black: #000000;
+$background-gradient: linear-gradient(
+  90.33deg,
+  #b5c5c5 43.34%,
+  rgba(181, 197, 197, 0) 121.48%
+);
+$button-hover-color: #f0f0e8de;
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +24,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100%;
-  background-color: #ffffff;
+  background-color: $bg-color-white;
 }
 
 .flexbox {
@@ -36,13 +47,13 @@ main {
 ul {
   text-decoration: none;
   list-style-type: none;
-  color: #000000;
+  color: $text-color-black;
   font-size: 2rem;
   letter-spacing: normal;
 }
 
 ol {
-  color: #000000;
+  color: $text-color-black;
   font-size: 2rem;
   letter-spacing: normal;
 }
@@ -50,12 +61,14 @@ ol {
 a {
   text-decoration: none;
   list-style-type: none;
-  color: #000000;
+  color: $text-color-black;
   font-size: 2rem;
   letter-spacing: normal;
-}
-a:hover {
-  color: rgba(149, 164, 176, 0.854);
+
+  //NESTING a:hover using "&", referring to parent selector
+  &:hover {
+    color: rgba(149, 164, 176, 0.854);
+  }
 }
 
 h2 {
@@ -77,18 +90,19 @@ p {
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.5em;
-  background: linear-gradient(90.33deg, #b5c5c5 43.34%, rgba(181, 197, 197, 0) 121.48%);
+  background: $background-gradient;
 }
 
 .underline-small {
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.5em;
-  background: linear-gradient(90.33deg, #b5c5c5 43.34%, rgba(181, 197, 197, 0) 121.48%);
+  background: $background-gradient;
   font-weight: 300;
 }
 
 /* NAVBAR */
+
 .main-nav {
   display: flex;
   gap: 7rem;
@@ -102,7 +116,9 @@ p {
 }
 
 /* -------------------------------- */
+
 /* INTRODUCTION */
+
 .introduction-flex {
   padding-top: 8rem;
 }
@@ -117,7 +133,6 @@ p {
 .profile_pic {
   padding-right: 5rem;
 }
-
 .introduction-items > article {
   width: 46rem;
 }
@@ -136,43 +151,49 @@ p {
 .portfolio-section {
   height: 12rem;
   padding-top: 6rem;
-}
-.portfolio-sectionh3 {
-  font-size: 35px;
-  line-height: 48px;
-  color: #000000;
+
+  &h3 {
+    font-size: 35px;
+    line-height: 48px;
+    color: $text-color-black;
+  }
 }
 
 /* ================================================================= */
+
 /* Projects */
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.main h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 100px;
-  line-height: 148px;
-  color: #000000;
-}
-.main h3 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 75px;
-  color: #000000;
-  padding-bottom: 2rem;
-}
-.main p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  letter-spacing: 0px;
-  padding-bottom: 2rem;
+
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 148px;
+    color: $text-color-black;
+  }
+
+  h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 75px;
+    color: $text-color-black;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: $text-color-black;
+    letter-spacing: 0px;
+    padding-bottom: 2rem;
+  }
 }
 
 .project-scroll {
@@ -185,14 +206,16 @@ p {
   align-items: flex-start;
   height: 100vh;
   padding-top: 5rem;
-}
-.project-1 img {
-  height: 959px;
-  width: 836px;
-  margin: -3rem;
-}
-.project-1 section {
-  padding-right: 2rem;
+
+  img {
+    height: 959px;
+    width: 836px;
+    margin: -3rem;
+  }
+
+  section {
+    padding-right: 2rem;
+  }
 }
 
 .project-2-container {
@@ -211,13 +234,15 @@ p {
   height: 100vh;
   width: 68vw;
   padding-top: 10rem;
-}
-.project-2 img {
-  width: 894px;
-  height: 676px;
-}
-.project-2 section {
-  padding-top: 3rem;
+
+  img {
+    width: 894px;
+    height: 676px;
+  }
+
+  section {
+    padding-top: 3rem;
+  }
 }
 
 .project-3 {
@@ -226,13 +251,14 @@ p {
   align-items: flex-start;
   height: 100vh;
   padding-top: 10rem;
-}
-.project-3 img {
-  height: 715px;
-  width: 993px;
-  margin: -9rem;
-  padding-left: 2rem;
-  padding-top: 8.5rem;
+
+  img {
+    height: 715px;
+    width: 993px;
+    margin: -9rem;
+    padding-left: 2rem;
+    padding-top: 8.5rem;
+  }
 }
 
 .project-4-container {
@@ -250,14 +276,16 @@ p {
   width: 68vw;
   height: 100vh;
   padding-top: 10rem;
-}
-.project-4 img {
-  width: 725px;
-  height: 415.43px;
-  padding-top: 9rem;
-}
-.project-4 section {
-  padding-top: 7rem;
+
+  img {
+    width: 725px;
+    height: 415.43px;
+    padding-top: 9rem;
+  }
+
+  section {
+    padding-top: 7rem;
+  }
 }
 
 .project-5 {
@@ -266,48 +294,53 @@ p {
   align-items: flex-start;
   height: 100vh;
   padding-top: 10rem;
-}
-.project-5 img {
-  width: 753px;
-  height: 436px;
-  padding-top: 2.5rem;
+
+  img {
+    width: 753px;
+    height: 436px;
+    padding-top: 2.5rem;
+  }
 }
 
 /* BUTTON STYLING */
-.project-1 a,
-.project-2 a,
-.project-3 a,
-.project-4 a,
-.project-5 a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 35px;
-  color: #000000;
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+  a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    color: $text-color-black;
+  }
 }
 
 .center-btn {
   display: flex;
   justify-content: center;
 }
-
 .center-style-btn {
   display: flex;
   justify-content: center;
   border-radius: 15px;
-  border: 1px solid #000000;
+  border: 1px solid $text-color-black;
   width: 231px;
   height: 59px;
   box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   align-items: center;
-}
-.center-style-btn:hover {
-  cursor: pointer;
-  background-color: rgba(240, 240, 232, 0.8705882353);
+
+  &:hover {
+    cursor: pointer;
+    background-color: $button-hover-color;
+  }
 }
 
 /* -------------------------------- */
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -317,6 +350,7 @@ p {
 }
 
 /* ANIMATIONS */
+
 .animated-img {
   opacity: 0;
   transform: translateX(500px);
@@ -335,6 +369,8 @@ p {
 }
 
 /* MEDIA QUERY */
+
+// if window screen is <= 800px DO {....}
 @media only screen and (max-width: 800px) {
   .flexbox {
     background-color: #727e80;
